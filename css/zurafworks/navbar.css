@@ -1,0 +1,79 @@
+/* Light Transparent Header */
+.header.light-transparent {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0);
+    /* Light transparent background */
+}
+
+.header.light-transparent .navbar .navbar-nav .nav-link {
+    color: var(--theme-bg-color);
+}
+
+.header.light-transparent .navbar .navbar-nav .nav-link:hover {
+    color: var(--theme-color);
+}
+
+.header.light-transparent .navbar .nav-item.active .nav-link {
+    color: var(--theme-color);
+}
+
+/* Sticky state for Light Transparent Header */
+.header.light-transparent.is-sticky {
+    background-color: rgba(255, 255, 255, 0);
+    /* Slightly more opaque when sticky */
+}
+
+.header.light-transparent.is-sticky .navbar .navbar-nav .nav-link {
+    color: var(--theme-bg-color);
+}
+
+.header.light-transparent.is-sticky .navbar .navbar-nav .nav-link:hover {
+    color: var(--theme-color);
+}
+
+.header.light-transparent.is-sticky .navbar .nav-item.active .nav-link {
+    color: var(--theme-color);
+}
+
+.header.light-transparent .woo-action ul li>a {
+    color: var(--theme-bg-color);
+}
+
+.header.light-transparent .woo-action ul li>a i {
+    color: var(--theme-bg-color);
+}
+
+.header.light-transparent .woo-action ul li.cart .dropdown-toggle .cart-icon i {
+    color: var(--theme-bg-color);
+}
+
+.header.light-transparent .woo-action ul li.cart .dropdown-toggle .cart-icon i:hover {
+    color: var(--theme-color);
+}
+
+.header.light-transparent.is-sticky .woo-action ul li>a {
+    color: var(--theme-bg-color);
+}
+
+.header.light-transparent.is-sticky .woo-action ul li>a:hover {
+    color: var(--theme-color);
+}
+
+
+.header.light-transparent .woo-action ul li>a {
+    color: #ffffff;
+}
+
+.header.light-transparent .woo-action ul li>a:hover {
+    color: var(--theme-color);
+}
+
+.header.light-transparent .woo-action ul li>a i {
+    color: #ffffff;
+}
+
+.header.light-transparent .woo-action ul li.cart .dropdown-toggle {
+    color: #ffffff;
+}

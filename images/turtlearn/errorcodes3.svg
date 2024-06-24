@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 800 800" xml:space="preserve" saveAspectRatio = "xMidYMid meet">
+    <desc>Created with Fabric.js 3.5.0</desc>
+    <defs>
+		 <style type="text/css">
+            <![CDATA[
+                /* Import Google Fonts */
+                @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+
+
+                /* Your CSS classes */
+                .fredericka-the-great-regular {
+                    font-family: 'Fredericka the Great', serif !important;
+                    font-weight: normal !important;
+                    font-style: normal; !important;
+                }
+
+                .cabin-sketch-regular {
+                    font-family: 'Cabin Sketch', sans-serif !important;
+                    font-weight: 400; !important;
+                    font-style: normal; !important;
+                }
+
+                .cabin-sketch-bold {
+                    font-family: 'Cabin Sketch', sans-serif !important;
+                    font-weight: 700; !important;
+                    font-style: normal; !important;
+                }
+            ]]>
+        </style>
+	</defs>
+    <!-- Kare -->
+    <rect id="mysvg" x="0" y="0" width="800" height="800" fill="none" stroke="black" stroke-width="0"/>
+
+    <!-- Metinler -->
+    <text id="errorDesc" x="100" y="150" font-size="25" class="fredericka-the-great-regular" fill="rgb(255,255,255)" xml:space="preserve">
+        <tspan x="150" dy="1.2em">zurafworks</tspan>
+        <tspan x="150" dy="1.2em">in da</tspan>
+        <tspan x="150" dy="1.2em">house</tspan>
+    </text>
+
+    <text id="errorCode" x="520" y="215" font-size="80" fill="rgb(129, 43, 49)" class="cabin-sketch-bold" xml:space="preserve"><tspan>715</tspan></text>
+
+    <text id="errorMessage" x="520" y="245" font-size="30" fill="rgb(129, 43, 49)" class="cabin-sketch-bold" xml:space="preserve"><tspan>ERROR</tspan></text>
+</svg>

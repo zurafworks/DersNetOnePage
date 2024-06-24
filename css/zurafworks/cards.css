@@ -1,0 +1,291 @@
+﻿:root {
+    --body-bg: var(--theme-bg-color);
+    --body-color: #FFF;
+    --float-buttons-bg: var(--theme-bg-color);
+    --channels-bg: #2E3136;
+    --border-accent: darken(var(--channels-bg), 7.7%);
+    --chat-bg: #36393E;
+    --menu-bg: var(--chat-bg);
+    --float-button-bg: var(--theme-bg-color);
+    --float-button-bg-active: #7289DA;
+    --float-button-marker-unread: #8A8E94;
+    --float-button-marker-active: #FFF;
+    --button-bg: #2E3136;
+    --button-bg-active: lighten(var(--button-bg), 5%);
+}
+
+/* float-button */
+.float-button {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    background-repeat: no-repeat;
+    margin-bottom: 8px;
+    cursor: pointer;
+    position: relative;
+    background-color: var(--float-button-bg);
+    color: var(--theme-color);
+    font-size: larger;
+    font-weight: 900;
+    border: 2px solid var(--theme-color);
+}
+
+    .float-button:not(.active) {
+        animation: float-button-hover-out 0.6s ease;
+    }
+
+        .float-button:not(.active):hover,
+        .float-button:not(.active):focus {
+            animation: float-button-hover-in 0.8s ease forwards;
+        }
+
+    .float-button .float-button-icon {
+        border-radius: inherit;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .float-button .float-button-icon > img {
+            border-radius: inherit;
+            max-width: 100%;
+        }
+
+    .float-button.float-button-friends {
+        margin-bottom: 46px;
+        text-align: center;
+    }
+
+        .float-button.float-button-friends svg {
+            max-width: 60%;
+            max-height: 60%;
+        }
+
+        .float-button.float-button-friends.active::before {
+            display: none;
+        }
+
+        .float-button.float-button-friends::after {
+            content: "2 ONLINE";
+            color: rgba(var(--body-color), 0.3);
+            pointer-events: none;
+            font-weight: 300;
+            font-size: 0.65rem;
+            position: absolute;
+            bottom: -35px;
+            left: 3px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid lighten(var(--float-buttons-bg), 5%);
+        }
+
+    .float-button::before {
+        position: absolute;
+        top: 20px;
+        left: -15px;
+        content: " ";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 25px;
+    }
+
+    .float-button.active {
+        border-radius: 15px;
+        background-color: var(--theme-color);
+        color: var(--float-button-bg);
+    }
+
+        .float-button.active:hover {
+            border-radius: 15px 0px 0px 15px;
+        }
+
+    .float-button.unread::before {
+        background: var(--float-button-marker-unread);
+    }
+
+    .float-button.active::before {
+        background: var(--float-button-marker-active);
+        height: 40px;
+        top: 5px;
+    }
+
+    .float-button.active.unread::before {
+        transition: all 0.2s ease-in-out;
+    }
+
+/* BUTTON */
+.button {
+    background: var(--button-bg);
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    appearance: none;
+    user-select: none;
+}
+
+    .button > svg,
+    .button > img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+.button-group .button:focus,
+.button-group .button:active {
+    background: var(--button-bg-active);
+}
+
+.button-group .button:not(:last-of-type) {
+    border-right: 1px solid var(--border-accent);
+}
+
+.button-group .button + .button {
+    box-shadow: inset 1px 0 0 #393c41;
+}
+
+/* ICONS */
+svg[id] {
+    width: 0;
+    position: absolute;
+}
+
+/* ANIMATIONS */
+@keyframes float-button-hover-in {
+    0% {
+        border-radius: 25px;
+        /*border-radius: 25px 70px 70px 25px;*/
+        background-color: var(--theme-color);
+        color: var(--float-button-bg);
+    }
+
+    40% {
+        /*border-radius: 16px 60px 60px 16px;*/
+        border-radius: 16px ;
+    }
+
+    50% {
+        border-radius: 18px;
+        /*border-radius: 18px 50px 50px 18px;*/
+    }
+
+    60% {
+        border-radius: 20px;
+        /*border-radius: 20px 40px 40px 20px;*/
+    }
+
+    70% {
+        border-radius: 22px;
+        /*border-radius: 22px 25px 25px 22px;*/
+        border: 1px solid var(--theme-color);
+    }
+
+    80% {
+        background-color: var(--theme-color);
+        border-radius: 23.5px;
+        /*border-radius: 23.5px 10px 10px 23.5px;*/
+    }
+
+    100% {
+        /*border-radius: 25px;*/
+        border-radius: 25px;
+        background-color: var(--theme-color);
+        color: var(--float-button-bg);
+        border: 2px solid var(--theme-color);
+    }
+}
+
+@keyframes float-button-hover-out {
+    0% {
+        border-radius: 25px;
+        background-color: var(--theme-color);
+        color: var(--float-button-bg);
+        border: 2px solid var(--theme-color);
+    }
+
+    45% {
+        background-color: lighten(var(--theme-color), 5%);
+        border-radius: 23.5px;
+        border: 2px solid var(--theme-color);
+    }
+
+    65% {
+        background-color: lighten(var(--theme-color), 15%);
+        border-radius: 30px;
+        border: 2px solid var(--theme-color);
+    }
+
+    75% {
+        border-radius: 40px;
+        background-color: lighten(var(--theme-color), 25%);
+        border: 2px solid var(--theme-color);
+    }
+
+    80% {
+        border-radius: 50px;
+    }
+
+    90% {
+        border-radius: 60px;
+    }
+
+    100% {
+        border-radius: 70px;
+    }
+}
+
+
+.card-button-fix {
+    margin: -20px 0px 0px -20px;
+    position: absolute;
+    z-index: 77;
+    background-color: rgba(249, 249, 249, 0.5);
+    backdrop-filter: blur(5px) saturate(180%);
+    box-shadow: 0 0 10px rgba(249, 249, 249, 2);
+    border-radius: 100px;
+    /*padding: 5px;*/
+}
+
+.cardbutton {
+    color: transparent !important; /* Başlangıçta arka plan rengi olmasın */
+    border-color: inherit !important;
+}
+
+    .cardbutton:hover {
+        background-color: inherit !important; /* Miras alınan rengi kullan */
+        color: white !important;
+        border-color: inherit !important;
+    }
+
+/* Trash Button */
+.deletebutton {
+    color: #c85961 !important;
+}
+
+    .deletebutton:hover {
+        background-color: #c85961 !important;
+        color: white !important;
+    }
+
+/* Wrench Button */
+.editbutton {
+    color: #0079ba !important;
+}
+
+    .editbutton:hover {
+        background-color: #0079ba !important;
+        color: white !important;
+    }
+
+/* Search Button */
+.examinebutton {
+    color: #f7a731 !important;
+}
+
+    .examinebutton:hover {
+        background-color: #f7a731 !important;
+        color: white !important;
+    }
