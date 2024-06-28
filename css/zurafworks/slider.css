@@ -61,6 +61,7 @@
 @media (max-width: 780px) {
     .slider-rounded{
         height: 60vh !important;
+        min-height: 550px !important;
     }
     .owl-carousel{
         margin-top: 5vh !important;
