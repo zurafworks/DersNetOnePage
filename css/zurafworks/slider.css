@@ -68,12 +68,11 @@
     }
 
     .owl-item{
-        height: 95vh !important;
+        height: 110vh !important;
+        min-height: 800px !important;
     }
 
-    .owl-item h5{
-        font-size: medium !important;
-    }
+   
 }
 
 .testimonial-item{
