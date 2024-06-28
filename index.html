@@ -40,7 +40,48 @@
     #paketlerimiz,
     #ornekDersler,
     #contact {
-      scroll-margin-top: 100px; /* Burada uygun değeri belirleyebilirsiniz */
+      scroll-margin-top: 100px;
+      /* Burada uygun değeri belirleyebilirsiniz */
+    }
+
+
+    @media (max-width: 576px) {
+
+      .feature-flex {
+        display: flex !important;
+        align-items: center !important;
+        text-align: left !important;
+      }
+
+      .feature-info-icon i {
+        font-size: 2em;
+        width: 50px !important;
+        height: 50px !important;
+        line-height: 50px;
+      }
+
+      .feature-info-icon {
+        width: 50px;
+        /* Circle genişliği */
+        height: 50px;
+        /* Circle yüksekliği */
+        text-align: center;
+        /* İkonu ortalar */
+        line-height: 50px;
+        /* İkonu dikeyde ortalar */
+        margin-right: 10px;
+        /* İkon ve başlık arasında boşluk */
+      }
+
+      .feature-info h4 {
+        margin: 0;
+        white-space: nowrap !important;
+      }
+
+      .feature-info p {
+        margin-top: 10px;
+        flex-basis: 100%;
+      }
     }
   </style>
 
@@ -79,7 +120,7 @@
         <a class="navbar-brand navbar-brand-sticky" href="index.html">
           <img class="img-fluid" src="images/logo.svg" alt="logo">
         </a>
-      <!-- <div class="search-category ms-auto">
+        <!-- <div class="search-category ms-auto">
            <div class="form-group select-border course-category">
             <i class="fa fa-th text-primary me-2" aria-hidden="true"></i>
             <select class=" basic-select">
@@ -98,19 +139,19 @@
            
         </div>-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div class="navbar-collapse collapse">
-          
-          <ul  class="nav navbar-nav hstack gap-3 float-right">
-            <a class="nav-link" href="#"  role="button"   aria-expanded="false">Başlarken</a>
+
+          <ul class="nav navbar-nav hstack gap-3 float-right">
+            <a class="nav-link" href="#" role="button" aria-expanded="false">Başlarken</a>
             <div class="vr"></div>
-            <a class="nav-link" href="#bizKimiz"  role="button"   aria-expanded="false">Biz Kimiz?</a>
+            <a class="nav-link" href="#bizKimiz" role="button" aria-expanded="false">Biz Kimiz?</a>
             <div class="vr"></div>
-            <a class="nav-link" href="#yontemimiz"  role="button"   aria-expanded="false">Yöntemimiz</a>
+            <a class="nav-link" href="#yontemimiz" role="button" aria-expanded="false">Yöntemimiz</a>
             <div class="vr"></div>
-            <a class="nav-link" href="#paketlerimiz"  role="button"   aria-expanded="false">Paketlerimiz</a>
+            <a class="nav-link" href="#paketlerimiz" role="button" aria-expanded="false">Paketlerimiz</a>
             <div class="vr"></div>
-            <a class="nav-link" href="#ornekDersler"  role="button"   aria-expanded="false">Örnek Derslerimiz</a>
+            <a class="nav-link" href="#ornekDersler" role="button" aria-expanded="false">Örnek Derslerimiz</a>
             <div class="vr"></div>
-            <a class="nav-link" href="#contact"  role="button"   aria-expanded="false">İletişim</a>
+            <a class="nav-link" href="#contact" role="button" aria-expanded="false">İletişim</a>
           </ul>
         </div>
         <!-- <div class="woo-action">
@@ -280,7 +321,7 @@
 
   <!--=================================
     Search Course -->
-  <section  class="space-pt bg-holder bg-overlay-black-30" data-jarallax='{"speed": 0.6}'
+  <section class="space-pt bg-holder bg-overlay-black-30" data-jarallax='{"speed": 0.6}'
     data-jarallax-video="https://www.youtube.com/embed/EzktR6LrkVI?si=1jZpiqoAiPXG_PBF">
     <!-- <div class="container"> -->
     <div class="row">
@@ -290,17 +331,21 @@
             data-items="1" data-lg-items="1" data-md-items="1" data-sm-items="1" data-space="0" data-autoheight="true">
             <!-- item-1 -->
             <div class="item">
-              <div class="video-image">
-                <img class="img-fluid w-100 slider-image" src="https://pngimg.com/d/children_PNG18017.png" alt="">
-              </div>
-              <div style="text-align: center;" class="testimonial-item">
+              <div style="text-align: start;" class="testimonial-item">
                 <div class="testimonial-content">
                   <h3 class="mb-0 text-white">Çocuklarınızın
                     İçindeki potansiyeli ortaya çıkarın!
                   </h3>
-                  <h6 class="mb-0 text-white">Her çocuk ona yeteri kadar inanıldığında dünyayı değiştirecek güce
-                    sahiptir. Sizi, çocuklarınızın yetenek ve potansiyellerini keşfetmeye davet ediyoruz! </h6>
+                  <h5 class="mb-0 text-white">Her çocuk ona yeteri kadar inanıldığında dünyayı değiştirecek güce
+                    sahiptir. Sizi, çocuklarınızın yetenek ve potansiyellerini keşfetmeye davet ediyoruz! </h5>
                 </div>
+
+              </div>
+              <div class="video-image">
+                <img class="img-fluid w-100 slider-image" src="https://pngimg.com/d/children_PNG18017.png" alt="">
+              </div>
+              <div style="text-align: center;" class="testimonial-item">
+
                 <div class="testimonial-author">
                   <a class="btn btn-primary" href="#">Animasyonlu Eğitim'e Git!</a>
                 </div>
@@ -310,7 +355,8 @@
             <!-- item-2 -->
             <div class="item">
               <div class="video-image">
-                <img class="img-fluid w-100 slider-image" src="https://pngimg.com/d/children_PNG18017.png" alt="">
+                <img style="margin-top: 5vh !important;" class="img-fluid w-100 slider-image"
+                  src="https://pngimg.com/d/children_PNG18017.png" alt="">
               </div>
               <div style="text-align: center;" class="testimonial-item">
                 <div class="testimonial-content">
@@ -330,16 +376,16 @@
               <div class="video-image">
                 <img class="img-fluid w-100 slider-image" src="https://pngimg.com/d/children_PNG18017.png" alt="">
               </div>
-              <div style="text-align: center;" class="testimonial-item">
+              <div style="text-align: End;" class="testimonial-item">
                 <div class="testimonial-content">
                   <h3 class="mb-0 text-white">
                     LGS ve YKS
                     Kâbusunuz olmasın!
                   </h3>
-                  <h6 class="mb-0 text-white">
+                  <h5 class="mb-0 text-white">
                     Merkezî sınavlarda her geçen yıl Türkçenin önemi daha da artmaktadır. Unutmayın ki iyi bir Türkçe
                     temeli, diğer derslerdeki başarıları da beraberinde getirir.
-                  </h6>
+                  </h5>
                 </div>
                 <div class="testimonial-author">
                   <a class="btn btn-primary" href="#">Örnek Ders Videoları</a>
@@ -467,7 +513,7 @@
           <!-- item-1 -->
           <div class="item">
             <div class="col-lg-11 slider-text-content">
-              <div class="bg-primary slider-rounded p-3 p-sm-4 p-xl-5">
+              <div style="background-color: #F5F0BB; text-shadow: 2px 2px 50px #000000;" class=" slider-rounded p-3 p-sm-4 p-xl-5">
                 <div class="m-2">
                   <div class="align-items-center mb-3">
                     <div style="text-align: center;">
@@ -491,7 +537,7 @@
           <!-- item-2 -->
           <div class="item">
             <div class="col-lg-11 slider-text-content">
-              <div class="bg-primary slider-rounded p-3 p-sm-4 p-xl-5">
+              <div style="background-color: #C4DFAA; text-shadow: 2px 2px 50px #000000;" class=" slider-rounded p-3 p-sm-4 p-xl-5">
                 <div class="m-2">
                   <div class="align-items-center mb-3">
                     <div style="text-align: center;">
@@ -513,7 +559,7 @@
           <!-- item-3 -->
           <div class="item">
             <div class="col-lg-11 slider-text-content">
-              <div class="bg-secondary slider-rounded p-3 p-sm-4 p-xl-5">
+              <div style="background-color: #90C8AC; text-shadow: 2px 2px 50px #000000;" class="slider-rounded p-3 p-sm-4 p-xl-5">
                 <div class="m-2">
                   <div class="align-items-center mb-3">
                     <div style="text-align: center;">
@@ -535,7 +581,7 @@
           <!-- item-4 -->
           <div class="item">
             <div class="col-lg-11 slider-text-content">
-              <div class="bg-warning p-3 slider-rounded p-sm-4 p-xl-5">
+              <div style="background-color: #73A9AD; text-shadow: 2px 2px 50px #000000;" class=" p-3 slider-rounded p-sm-4 p-xl-5">
                 <div class="m-2">
                   <div class="align-items-center mb-3">
                     <div style="text-align: center;">
@@ -633,11 +679,14 @@
       <div class="row pb-4 position-relative">
         <div class="col-sm-4 mb-4 mb-sm-0">
           <div class="feature-info text-center">
-            <div class="feature-info-icon">
-              <i class="flaticon-register fa-4x text-dark bg-white rounded-circle"></i>
-              <img class="d-lg-block d-none" src="images/feature-info/arrow-01.png" alt="">
+
+            <div class="feature-flex">
+              <div class="feature-info-icon">
+                <i class="flaticon-register fa-4x text-dark bg-white rounded-circle"></i>
+                <img class="d-lg-block d-none" src="images/feature-info/arrow-01.png" alt="">
+              </div>
+              <h4 class="my-4 text-black">Ders İçerikleri</h4>
             </div>
-            <h4 class="my-4 text-black">Ders İçerikleri</h4>
             <p class="text-black mb-0">
               Eğitim materyallerimiz, video dersler, canlı yayınlar, etkileşimli alıştırmalar ve zengin içeriklerle
               desteklenerek öğrencilerin Türkçe ve edebiyat konularını derinlemesine anlamalarına yardımcı olmaktadır.
@@ -646,12 +695,14 @@
         </div>
         <div class="col-sm-4 mb-4 mb-sm-0">
           <div class="feature-info text-center">
-            <div class="feature-info-icon">
-              <i class="flaticon-edit fa-4x text-dark bg-white rounded-circle"></i>
-             
-              <img class="d-lg-block d-none" src="images/feature-info/arrow-02.png" alt="">
+            <div class="feature-flex">
+              <div class="feature-info-icon">
+                <i class="flaticon-edit fa-4x text-dark bg-white rounded-circle"></i>
+
+                <img class="d-lg-block d-none" src="images/feature-info/arrow-02.png" alt="">
+              </div>
+              <h4 class="my-4 text-black">Değerlendirme ve pekiştirmeler</h4>
             </div>
-            <h4 class="my-4 text-black">Değerlendirme ve pekiştirmeler</h4>
             <p class="text-black mb-0">
               Her öğrencinin bireysel öğrenme ihtiyaçlarına cevap verebilecek esnek ve kişiselleştirilmiş eğitim
               çözümleri sunan platformumuz, sürekli geri bildirim sağlayarak deneme sınavları, performans
@@ -662,19 +713,22 @@
         </div>
         <div class="col-sm-4">
           <div class="feature-info text-center">
-            <div class="feature-info-icon">
-              <i class="flaticon-student fa-4x text-dark bg-white rounded-circle"></i>
+            <div class="feature-flex">
+              <div class="feature-info-icon">
+                <i class="flaticon-student fa-4x text-dark bg-white rounded-circle"></i>
+              </div>
+              <h4 class="my-4 text-black">Verimli Ders Ortamı</h4>
             </div>
-            <h4 class="my-4 text-black">Verimli Ders Ortamı</h4>
-            <p class="text-black mb-0">
-              Eğitimde teknolojinin sunduğu en yeni olanakları kullanarak interaktif ve katılımcı bir öğrenme ortamı
-              yaratmakla birlikte eğitim materyallerimiz, öğrencilerin öğrenme süreçlerini daha etkili ve keyifli hale
-              getirmek amacıyla tasarlanmaktadır. Teknoloji destekli bu yaklaşım sayesinde, öğrencilerimiz Türkçe ve
-              edebiyat konularını daha iyi anlamakta ve sınavlara daha iyi hazırlanmaktadır.
-            </p>
           </div>
+          <p style="text-align: center;" class="text-black mb-0">
+            Eğitimde teknolojinin sunduğu en yeni olanakları kullanarak interaktif ve katılımcı bir öğrenme ortamı
+            yaratmakla birlikte eğitim materyallerimiz, öğrencilerin öğrenme süreçlerini daha etkili ve keyifli hale
+            getirmek amacıyla tasarlanmaktadır. Teknoloji destekli bu yaklaşım sayesinde, öğrencilerimiz Türkçe ve
+            edebiyat konularını daha iyi anlamakta ve sınavlara daha iyi hazırlanmaktadır.
+          </p>
         </div>
       </div>
+    </div>
     </div>
   </section>
   <!--=================================
@@ -688,7 +742,8 @@
         <div class="col-md-8">
           <div class="section-title text-center">
             <h2>Paketlerimiz</h2>
-            <p>If success is a process with a number of defined steps, then it is just like any other process. So, what is the first step in any process?</p>
+            <p>If success is a process with a number of defined steps, then it is just like any other process. So, what
+              is the first step in any process?</p>
           </div>
         </div>
       </div>
@@ -699,7 +754,8 @@
             <p class="mb-0">Only the basics - Everything you need to get started. Best for startup</p>
             <div class="pricing-price">
               <div class="monthly-price"><sup>$</sup>
-              <strong>25</strong>/month</div>
+                <strong>25</strong>/month
+              </div>
             </div>
             <ul class="list-unstyled pricing-list">
               <li><i class="fas fa-check"></i>5 Analytics Campaign</li>
@@ -717,7 +773,8 @@
             <p class="mb-0">When you are ready to grow, We will grow with you. Get a Standard plan</p>
             <div class="pricing-price">
               <div class="monthly-price"><sup>$</sup>
-              <strong>47</strong>/month</div>
+                <strong>47</strong>/month
+              </div>
             </div>
             <ul class="list-unstyled pricing-list">
               <li><i class="fas fa-check"></i>30 Analytics Campaign</li>
@@ -735,7 +792,8 @@
             <p class="mb-0">Ready to kick it up a notch? Go for big with Professional membership</p>
             <div class="pricing-price">
               <div class="monthly-price"><sup>$</sup>
-              <strong>69</strong>/month</div>
+                <strong>69</strong>/month
+              </div>
             </div>
             <ul class="list-unstyled pricing-list">
               <li><i class="fas fa-check"></i>50 Analytics Campaign</li>
@@ -882,7 +940,7 @@
   </section>
   <!--=================================
       Education Categories -->
-      
+
   <!--=================================
       Client Logo -->
   <!-- <section class="space-pb">

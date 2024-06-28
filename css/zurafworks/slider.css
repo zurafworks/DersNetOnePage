@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Great+Vibes&display=swap');
+
 .slider-image {
     max-height: 50vh !important;
     object-fit: contain;
@@ -53,3 +57,64 @@
 .slider-rounded p{
     font-weight: bold;
 }
+
+@media (max-width: 780px) {
+    .slider-rounded{
+        height: 60vh !important;
+    }
+    .owl-carousel{
+        margin-top: 5vh !important;
+       
+    }
+
+    .owl-item{
+        height: 85vh !important;
+    }
+}
+
+.testimonial-item{
+    margin-left: 10vw !important;
+    margin-right: 10vw !important;
+}
+
+.testimonial-item h3{
+    font-family: "Playwrite NZ", cursive !important;
+    font-optical-sizing: auto !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+}
+
+.testimonial-item h5{
+    font-family: "Playwrite NZ", cursive !important;
+    font-optical-sizing: auto !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+}
+
+/* .testimonial-item h3{
+    font-family: "Delicious Handrawn", cursive !important;
+    font-optical-sizing: auto !important;
+    font-style: normal !important;
+    font-weight: 900 !important;
+}
+
+.testimonial-item h6{
+    font-family: "Delicious Handrawn", cursive !important;
+    font-optical-sizing: auto !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+} */
+
+/* .testimonial-item h1{
+    font-family: "Great Vibes", cursive !important;
+    font-optical-sizing: auto !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+}
+
+.testimonial-item h3{
+    font-family: "Great Vibes", cursive !important;
+    font-optical-sizing: auto !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+} */
